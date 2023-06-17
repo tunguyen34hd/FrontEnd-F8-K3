@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i {
+    margin-top: 10px;
+}
+
+h3 {
+    margin: 15px 0;
+}
+
+p {
+    margin: 10px 0;
+}

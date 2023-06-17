@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 30px;
+}
+
+.content {
+    margin: 15px 0;
+}
+
+.input-email {
+    display: block;
+    margin: 15px 0;
+}
+
+.button-request {
+}
