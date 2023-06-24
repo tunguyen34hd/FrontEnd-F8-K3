@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form
+            action="https://api-gateway.fullstack.edu.vn/action_page.php"
+            method="post"
+        >
+            <div>
+                <!-- value: Nguyễn Van A, mặc định sẽ tự điền là Nguyễn Văn A -->
+                <label for="name">Họ tên</label>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Họ tên"
+                    id="name"
+                    required
+                    value="Nguyễn Văn A"
+                />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="email"
+                    id="email"
+                />
+            </div>
+            <div>
+                <label for="password">Mật Khẩu</label>
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Mật Khẩu"
+                    id="password"
+                />
+            </div>
+            <div>
+                <label for="age">Tuổi</label>
+                <input
+                    type="number"
+                    name="number"
+                    placeholder="Điền tuổi"
+                    id="age"
+                    min="18"
+                    max="5000000000000000"
+                    step="0.1"
+                />
+            </div>
+            <div>
+                <label for="avatar">Avatar</label>
+                <!-- custom label để fake input, và ẩn input đi -->
+                <input type="file" name="avatar" id="file" />
+            </div>
+            <div>
+                <!-- name để phân loại nhóm, nếu name khác nhau thì có thể tích chọn đc nhiều -->
+                <label>Giới tính</label>
+                <label
+                    ><input type="radio" name="gender" value="0" />Không
+                    biết</label
+                >
+                <label><input type="radio" name="gender" value="1" />Nam</label>
+                <label><input type="radio" name="gender" value="2" />Nữ</label>
+            </div>
+            <div>
+                <label>Nguồn</label>
+                <label
+                    ><input type="checkbox" name="source[]" value="0" />Không
+                    biết</label
+                >
+                <label
+                    ><input type="checkbox" name="source[]" value="1" />Phở
+                    bò</label
+                >
+                <label
+                    ><input type="checkbox" name="source[]" value="2" />Gu
+                    gồ</label
+                >
+            </div>
+            <div>
+                <label for="message">Tin nhắn</label>
+                <div>
+                    <textarea
+                        name="message"
+                        placeholder="Tin nhắn..."
+                        id="message"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                </div>
+            </div>
+            <div>
+                <!-- thuộc tính selected sẽ tự chọn -->
+                <!-- thuộc tính Multiple để thành bảng cuộn -->
+                <!-- muốn chia nhóm thì bọc vào trong otpgroup, label để thể hiện tên -->
+                <label for="provinces">Tỉnh/Thành Phố</label>
+                <select name="provinces" id="provinces" multiple>
+                    <option value="">Chọn Tỉnh/Thành phố</option>
+                    <optgroup label="Miền Bắc">
+                        <option value="1" selected>Hà Nội</option>
+                        <option value="2">Phú Thọ</option>
+                    </optgroup>
+                    <optgroup label="Miền Nam">
+                        <option value="3">Thanh Hóa</option>
+                        <option value="4">Nghệ An</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <button type="submit">Đăng ký</button>
+            <button type="reset">Nhập Lại</button>
+        </form>
+    </body>
+</html>

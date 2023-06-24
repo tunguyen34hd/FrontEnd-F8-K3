@@ -9,34 +9,41 @@
         <!-- Cellspacing: khoảng cách giữa các ô -->
         <!-- Cellpadding: đệm khoảng cách giữa giá trị -->
         <table border="1" width="100%" cellspacing="0" cellpadding="5">
-            <tr>
-                <!-- table có tính đồng bộ nên hàng đầu tiên sẽ đồng bộ hàng về sau -->
-                <!-- th tag : in đậm và nằm giữa -->
-                <th width="5%">STT</th>
-                <th>Họ và Tên</th>
-                <th>Thu Nhập</th>
-            </tr>
-            <tr>
-                <!-- rowspan: gộp, chiếm cột thành một -->
-                <td rowspan="2">1</td>
-                <td>Nguyễn Văn A</td>
-                <td>100.000đ</td>
-            </tr>
-            <tr>
-                <!-- <td>2</td> -->
-                <td>Nguyễn Văn B</td>
-                <td>200.000đ</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Nguyễn Văn C</td>
-                <td>300.000đ</td>
-            </tr>
-            <tr>
-                <!-- colspan: gộp, chiếm bao nhiêu cột -->
-                <td colspan="2">Tổng</td>
-                <td>3.000.000đ</td>
-            </tr>
+            <!-- phân loại bằng thead, tbody, tfoot -->
+            <thead>
+                <tr>
+                    <!-- table có tính đồng bộ nên hàng đầu tiên sẽ đồng bộ hàng về sau -->
+                    <!-- th tag : in đậm và nằm giữa -->
+                    <th width="5%">STT</th>
+                    <th>Họ và Tên</th>
+                    <th>Thu Nhập</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- rowspan: gộp, chiếm cột thành một -->
+                    <td rowspan="2">1</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>100.000đ</td>
+                </tr>
+                <tr>
+                    <!-- <td>2</td> -->
+                    <td>Nguyễn Văn B</td>
+                    <td>200.000đ</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Nguyễn Văn C</td>
+                    <td>300.000đ</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- colspan: gộp, chiếm bao nhiêu cột -->
+                    <td colspan="2">Tổng</td>
+                    <td>3.000.000đ</td>
+                </tr>
+            </tfoot>
         </table>
     </body>
 </html>
