@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>form đặt hàng</title>
         <style>
+            * {
+                box-sizing: border-box;
+            }
+
             .container {
                 width: 720px;
             }
@@ -15,13 +19,15 @@
                 padding-left: 0;
                 padding-right: 0;
             }
-            input {
+            input,
+            select {
                 padding: 5px;
                 width: 80%;
             }
             span {
                 opacity: 0.6;
             }
+
             button {
                 color: #fff;
                 border: none;
@@ -44,8 +50,8 @@
             <form>
                 <table width="100%" cellspacing="0" cellpadding="10">
                     <tr>
-                        <td><b>First Name</b></td>
-                        <td><b>Last Name</b></td>
+                        <th align="left">First Name</th>
+                        <th align="left">Last Name</th>
                     </tr>
                     <tr>
                         <td>
@@ -54,8 +60,8 @@
                         <td><input type="text" placeholder="Wick" /></td>
                     </tr>
                     <tr>
-                        <td><b>Email address</b></td>
-                        <td><b>Address</b></td>
+                        <th align="left">Email address</th>
+                        <th align="left">Address</th>
                     </tr>
                     <tr>
                         <td>
@@ -68,8 +74,8 @@
                         <td><input type="text" placeholder="Silk st" /></td>
                     </tr>
                     <tr>
-                        <td><b>City</b></td>
-                        <td><b>State</b><span> (optional)</span></td>
+                        <th align="left">City</th>
+                        <th align="left">State<span> (optional)</span></th>
                     </tr>
                     <tr>
                         <td>
@@ -78,14 +84,21 @@
                         <td><input type="text" placeholder="" /></td>
                     </tr>
                     <tr>
-                        <td><b>Zip code</b></td>
-                        <td><b>Country</b></td>
+                        <th align="left">Zip code</th>
+                        <th align="left">Country</th>
                     </tr>
                     <tr>
                         <td>
                             <input type="text" placeholder="" />
                         </td>
-                        <td><input type="text" placeholder="" /></td>
+                        <td>
+                            <select name="state" id="state">
+                                <option value="state">State</option>
+                                <option value="state">State</option>
+                                <option value="state">State</option>
+                                <option value="state">State</option>
+                            </select>
+                        </td>
                     </tr>
                 </table>
                 <button>SEND ME FREE COFFEE</button>

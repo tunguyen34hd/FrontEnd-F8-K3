@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <form action="">
+            <table width="300px" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td>
+                        <input type="text" name="name" id="username" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td>
+                        <input type="password" name="password" id="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">City of Employment:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="city" id="city" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="server">Web server:</label></td>
+                    <td>
+                        <select name="server" id="server">
+                            <option value="">--Choose a server--</option>
+                            <option value="0">Server Trái Đất</option>
+                            <option value="1">Server HTMLOL</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">
+                        <label>Please specify your role:</label>
+                    </td>
+                    <td>
+                        <label
+                            ><input
+                                type="radio"
+                                name="specify"
+                                value="0"
+                            />Admin</label
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label
+                            ><input
+                                type="radio"
+                                name="specify"
+                                value="0"
+                            />Engineer</label
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label
+                            ><input
+                                type="radio"
+                                name="specify"
+                                value="0"
+                            />Manager</label
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label
+                            ><input
+                                type="radio"
+                                name="specify"
+                                value="0"
+                            />Guest</label
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <label>Single Sign-on to the following:</label>
+                    </td>
+                    <td>
+                        <label
+                            ><input
+                                type="checkbox"
+                                name="sign-on"
+                                value="0"
+                            />Mail</label
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label
+                            ><input
+                                type="checkbox"
+                                name="sign-on"
+                                value="0"
+                            />Payroll</label
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="sign-on"
+                                value="0"
+                            />Self-service</label
+                        >
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>

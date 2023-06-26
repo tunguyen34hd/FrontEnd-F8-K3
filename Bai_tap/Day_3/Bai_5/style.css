@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 10% 0;
+    text-align: center;
+}
+
+.container__box {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    background-color: #8498cb;
+    padding: 16px 67px;
+}
+
+.container h1 {
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.container h1 span {
+    color: #04b0ef;
+    font-weight: 600;
+}
+
+.container p {
+    margin: 20px 0 30px;
+}
+
+.container button {
+    color: #fff;
+    border: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    padding: 15px 40px;
+    background-color: #2c3033;
+}
+
+.container button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

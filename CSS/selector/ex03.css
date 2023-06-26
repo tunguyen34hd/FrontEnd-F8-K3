@@ -1,0 +1,23 @@
+/* h2 ~ ul {
+    color: red;
+} */
+/* dấu ~
+chọn thành phần đằng sau và ngang hàng */
+
+/* h2 ~ div ul {
+    color: red;
+} */
+
+/* .box p + h2,
+.box p + h2 + h2 {
+    color: red;
+} */
+
+/* .box h2 + h2 {
+    color: red;
+} */
+
+.todos input:checked ~ span {
+    color: red;
+    text-decoration: line-through;
+}

@@ -1,0 +1,23 @@
+/* .title {
+    color: rebeccapurple;
+}
+
+#title {
+    color: brown;
+}
+
+p {
+    color: aqua;
+}
+
+.box > h1 {
+    color: orange;
+} */
+
+h2.title {
+    color: rebeccapurple;
+}
+
+h3.title {
+    color: green;
+}
