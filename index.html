@@ -5,8 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>F8-Offline</title>
         <style>
+            * {
+                color: #fff;
+            }
+            body {
+                background-color: black;
+            }
             a {
-                color: black;
                 margin: 20px;
                 display: block;
                 text-decoration: none;
@@ -15,9 +20,28 @@
                 list-style-type: none;
             }
 
+            ul > li > a {
+                display: inline-block;
+                transition: transform 1s;
+            }
+
+            ul > li > a:hover {
+                animation: rotateInfinityAnimation 0.1s infinite linear;
+            }
+
             li > h2 > span {
                 animation: colorAnimation 3s infinite;
             }
+
+            @keyframes rotateInfinityAnimation {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
             @keyframes colorAnimation {
                 0% {
                     color: red;
