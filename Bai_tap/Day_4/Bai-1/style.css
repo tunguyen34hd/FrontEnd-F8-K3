@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-sub {
+    width: 1165px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: #334455;
+}
+
+.form-sub .form-sub__heading {
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.form-sub .form-sub__para {
+    color: #fff;
+    padding: 15px 0;
+}
+
+.form-sub span {
+    color: #ffa500;
+}
+
+.form-sub input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-sub:hover input::placeholder {
+    color: #ffa500;
+}
+
+.form-sub:hover input {
+    background-color: #ddd;
+}
+
+.form-sub button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8db35;
+    cursor: pointer;
+}
+
+.form-sub:hover button {
+    background-color: #ffa500;
+    color: #fff;
+}

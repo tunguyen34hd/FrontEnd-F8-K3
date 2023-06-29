@@ -1,0 +1,27 @@
+/* Attribute Selector */
+/* .website a[target] {
+    color: red;
+} */
+/* khi bor thuộc tính a thì nó sẽ chọn tất cả các như thuộc tính dấu star* .website *[target] */
+
+/* .website a[href="https://fullstack.edu.vn/"]
+{
+    color: red;
+} */
+
+/* .website a[href^="https://fullstack.edu.vn/"]
+{
+    color: red;
+} */
+/* khi có dấu mũ ^ sẽ tìm cấc thuộc tính có phần đầu  */
+
+/* .website a[href*="fullstack.edu.vn/"] {
+    color: red;
+} */
+
+.website a[href$=".jpg"] {
+    color: red;
+}
+/* Dấu mũ ^ sẽ select phần đầu, còn dấu dollar $ sẽ select phần đuôi */
+
+/* Link research:  https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
