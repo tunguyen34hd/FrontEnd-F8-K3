@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form contact</title>
+        <link rel="stylesheet" href="../fontawesome super small/css/all.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <section class="form-contact">
+            <h1 class="form-contact__heading">Hey there</h1>
+            <p class="form-contact__dsc">
+                <span class="form-contact__highlignt">
+                    We'd like to hear from you.
+                </span>
+                Send us your message or just say hy with our contact form or
+                directly via phone, we love to chat.
+            </p>
+            <form class="form-contact__submit">
+                <label class="form-contact__input-wrap">
+                    <input
+                        class="form-contact__input"
+                        type="text"
+                        name="name"
+                        placeholder="Your name"
+                    />
+                    <span class="form-contact__icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <div class="form-contact__noti">Enter your name</div>
+                    <div class="form-contact__icon-star">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="form-contact__icon-xmark">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </label>
+                <label class="form-contact__input-wrap">
+                    <input
+                        class="form-contact__input"
+                        type="email"
+                        name="email"
+                        placeholder="your@domain.com"
+                    />
+                    <span class="form-contact__icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </span>
+                    <div class="form-contact__noti">Enter your email</div>
+                    <div class="form-contact__icon-star">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="form-contact__icon-xmark">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </label>
+                <label class="form-contact__input-wrap">
+                    <input
+                        class="form-contact__input"
+                        type="text"
+                        name="phone"
+                        placeholder="+44 00 123"
+                    />
+                    <span class="form-contact__icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <div class="form-contact__noti">
+                        Enter your phone number
+                    </div>
+                    <div class="form-contact__icon-star">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="form-contact__icon-xmark">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </label>
+                <label class="form-contact__input-wrap">
+                    <select class="form-contact__input" name="subject" id="">
+                        <option value="1">Subject 1</option>
+                        <option value="2">Subject 2</option>
+                        <option value="3">Subject 3</option>
+                    </select>
+                    <span class="form-contact__icon">
+                        <i class="fa-solid fa-book"></i>
+                    </span>
+                    <div class="form-contact__icon-star">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="form-contact__icon-xmark">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </label>
+                <label class="form-contact__input-wrap">
+                    <textarea
+                        class="form-contact__input-message"
+                        name="message"
+                        cols="30"
+                        rows="10"
+                    >
+Message</textarea
+                    >
+                    <span class="form-contact__icon">
+                        <i class="fa-solid fa-message"></i>
+                    </span>
+                    <div class="form-contact__icon-star">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="form-contact__icon-xmark">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </label>
+                <div class="form-contact__btn">
+                    <label for="copy-message">
+                        <input
+                            type="checkbox"
+                            id="copy-message"
+                            class="message-checked"
+                        />
+                        <span class="copy-message-label"
+                            >Send me a copy of this message</span
+                        >
+                    </label>
+                    <button class="form-contact__btn-submit">SEND</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

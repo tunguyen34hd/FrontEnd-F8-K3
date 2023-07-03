@@ -1,0 +1,29 @@
+/* 
+Background CSS
+- Background-color
+- Background-image
+- Background-size
+- Background-attachment
+- Background-position
+- Background-repeat: Độ lặp của ảnh nền (no-repeat, repeat-x, repeat-y, repeat)
+
+
+=> background: Gộp tất cả các thuộc tính trên
+*/
+
+body {
+    height: 2000px;
+    background-color: bisque;
+    /* background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    background-attachment: fixed; */
+    background: bisque
+        url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg")
+        no-repeat 0 0 / cover fixed;
+}
+
+.box {
+    background-color: aqua;
+}

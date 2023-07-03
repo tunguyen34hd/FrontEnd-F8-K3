@@ -1,0 +1,31 @@
+.content {
+    /* letter-spacing: 3px; */
+    word-spacing: 3px;
+}
+
+.content h1 {
+    text-decoration: underline overline line-through;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.box {
+    width: 200px;
+    border: 1px solid red;
+    word-wrap: break-word;
+    /* word-break: break-all; */
+}
+
+.element {
+    text-indent: 15px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.span-wrap {
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+.content {
+    color: rgb(193, 96, 7);
+}
+
+.box {
+    color: rgba(193, 97, 7, 0.623);
+}
+
+.box1 {
+    color: green;
+}
+
+.box2 {
+    color: hsla(126, 100%, 50%, 1);
+}
+/* 
+color:
+- color name
+- hexa
+- rgb
+- hsl
+*/
+
+/* .content {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+} */
+/* 
+- em: tỉ lệ với cha gần nhất
+- rem: tỉ lệ với fontsize của trình duyệt
+*/
+/* html {
+    font-size: 18px;
+}
+body {
+    font-size: 1rem;
+}
+.box {
+    font-size: 1.2em;
+}
+.content {
+    font-size: 1.5em;
+}
+.content p {
+    font-size: 1.2em;
+    
+} */
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../Text/font/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("../Text/font/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("../Text/font/OpenSans-Light.ttf");
+    font-weight: 300;
+}
+
+/* 
+Font-family sẽ có một số kiểu:
+    - Độ dày: light(300), regular(400), medium(500), bold(700)
+    - Độ nghiêng: normal, italic
+*/
+body {
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-family: "Open sans", sans-serif;
+    font-weight: 700;
+}

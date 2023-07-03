@@ -32,10 +32,23 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="date" placeholder="Date" />
+                            <input
+                                type="text"
+                                name="date"
+                                class="date"
+                                placeholder="DATE"
+                                onfocus="(this.type='date')"
+                                min="2023-05-08"
+                            />
                         </td>
                         <td>
-                            <input type="text" name="time" placeholder="Time" />
+                            <input
+                                type="text"
+                                name="time"
+                                class="time"
+                                placeholder="TIME"
+                                onfocus="(this.type='time')"
+                            />
                         </td>
                     </tr>
                     <tr>
@@ -43,6 +56,7 @@
                             <input
                                 type="number"
                                 name="people"
+                                min="1"
                                 placeholder="People"
                             />
                         </td>
