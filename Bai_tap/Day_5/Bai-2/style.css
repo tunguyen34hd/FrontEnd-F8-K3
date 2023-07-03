@@ -30,7 +30,7 @@
     height: 16px;
     font-size: 14px;
     position: absolute;
-    top: 12px;
+    top: 1px;
     left: 20px;
     z-index: 1;
     color: #fff;
@@ -53,10 +53,10 @@
     margin-left: 20px;
 }
 
-.heading__popup input:checked ~ .heading__popup-icon--open {
+.heading__popup input:checked ~ label .heading__popup-icon--open {
     display: none;
 }
-.heading__popup input:checked ~ .heading__popup-icon--close {
+.heading__popup input:checked ~ label .heading__popup-icon--close {
     display: block;
 }
 
