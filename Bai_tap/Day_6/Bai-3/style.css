@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background: url("./img/login-bg2.jpg") no-repeat center / cover;
+}
+
+.container {
+    display: flex;
+    width: 50%;
+    margin: 250px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.form-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: #ff574d;
+    padding: 25px 35px;
+    gap: 20px;
+}
+
+.form-connect__heading {
+    text-align: center;
+    line-height: 30px;
+}
+
+.logo-heading {
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    color: #ff574d;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.form-connect__heading h2 {
+    display: inline-block;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.form-connect__dsc {
+    color: #fff;
+    text-align: justify;
+}
+
+.form-connect__btn {
+    margin: 10px 0;
+    border: none;
+    display: block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #ff574d;
+    cursor: pointer;
+}
+
+.form-connect__logos {
+    display: flex;
+    padding: 10px 0;
+}
+
+.form-connect__logo {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #da5c4f;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-btn-swap {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    left: 38%;
+    top: 50%;
+    background-color: #fff;
+    color: #ff574d;
+    text-align: center;
+    line-height: 35px;
+    box-shadow: 0 0 10px #393838;
+    cursor: pointer;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    background-color: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.form-login__heading {
+    position: relative;
+}
+
+.form-login__heading span {
+    color: #ff574d;
+}
+
+.form-login__heading::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 2px;
+    top: 40px;
+    left: 42%;
+    background-color: #ff574d;
+}
+
+.form-login__input-wrap {
+    margin: 30px 0;
+}
+
+.form-login__input {
+    width: 100%;
+}
+
+.form-login__input input {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+}
+
+.form-login__input-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.form-login__input-sub label {
+    display: flex;
+    align-items: center;
+    color: #717171;
+}
+
+.form-login__input-sub input {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.form-login__input-sub a {
+    display: inline-block;
+    text-decoration: none;
+    color: #717171;
+}
+
+.form-login__input-sub a:hover {
+    text-decoration: underline;
+}
+
+.form-login__input-submit {
+    width: 100%;
+    padding: 15px 0;
+    display: inline-block;
+    background-color: #ff574d;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.form-login__input-footer span {
+    color: #717171;
+}
+
+.form-login__input-footer a {
+    padding-left: 5px;
+    text-decoration: none;
+    color: #717171;
+}
+
+.form-login__input-footer a:hover {
+    text-decoration: underline;
+}

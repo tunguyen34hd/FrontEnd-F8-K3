@@ -1,0 +1,22 @@
+.box {
+    width: 400px;
+    border: 1px solid red;
+    padding: 20px;
+}
+
+.box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box img {
+    padding: 100px 0;
+    width: 150px;
+    height: 150px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    shape-outside: circle();
+}

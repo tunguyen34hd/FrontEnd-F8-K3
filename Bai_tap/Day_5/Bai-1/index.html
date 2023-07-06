@@ -81,7 +81,11 @@
                     </div>
                 </label>
                 <label class="form-contact__input-wrap">
-                    <select class="form-contact__input" name="subject" id="">
+                    <select
+                        class="form-contact__input form-contact__input-select"
+                        name="subject"
+                        id=""
+                    >
                         <option value="1">Subject 1</option>
                         <option value="2">Subject 2</option>
                         <option value="3">Subject 3</option>
@@ -102,9 +106,8 @@
                         name="message"
                         cols="30"
                         rows="10"
-                    >
-Message</textarea
-                    >
+                        placeholder="Message"
+                    ></textarea>
                     <span class="form-contact__icon">
                         <i class="fa-solid fa-message"></i>
                     </span>

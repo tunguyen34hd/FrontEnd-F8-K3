@@ -1,0 +1,46 @@
+/* 
+float: trôi thành phần html về bên trái hoặc phải theo thành phần trực tiếp
++ none
++ left
++ right
+
+Khi sd float sẽ mất chiều cao của thẻ cha thì sử dụng overflow hoặc tạo lớp giả sd thuộc tính clear
+
+Tạo class:
+.clearfix {
+    clear: both;
+} 
+
+Thuộc tính clear
+*/
+.box {
+    border: 1px solid red;
+    width: 300px;
+    padding: 15px;
+    overflow: auto;
+}
+
+.box::after {
+    content: "";
+    display: block; /* Bắt buộc */
+    clear: both;
+}
+
+.col-1 {
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    color: #fff;
+    float: left;
+}
+
+.col-2 {
+    background-color: red;
+    color: #fff;
+    width: 100px;
+    height: 70px;
+    float: left;
+}
+.text {
+    clear: both;
+}

@@ -1,0 +1,17 @@
+/* 
+display: hiển thị
+- none => Ẩn
+- block => chuyển về thẻ block
+- inline: chuyển về thẻ inline
+- inline-block: là thẻ block và cùng nằm trên 1 dòng, kích thước mặc định theo nội dung
+
+Ngoài ra: display còn rất nhiều giá trị
+*/
+.box span {
+    color: black;
+    border: 1px solid red;
+    /* display: none; */
+    /* visibility: hidden; */
+    display: inline-block;
+    width: 50px;
+}

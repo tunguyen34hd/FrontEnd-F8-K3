@@ -1,0 +1,39 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.span {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.img {
+    width: 300px;
+    height: auto;
+}
+
+/* 
+img là thẻ inline có tính chất như text set thuộc tính font-size:0, line-height:0 để bỏ khoảng trắng,hoặc viết thẻ img liền với nhau trong HTML
+*/
+
+/* 
+width, height chỉ không đặt được ở thẻ inline
+
+thẻ inline: không đặt được width,height, margin (top và bottom), padding( top bottom)
++ inline replace (replaced element)
++ inline non-replace
+*/
+
+.product {
+    background: rgb(0, 0, 0);
+    width: 200px;
+    color: #fff;
+}
+
+.product img {
+    display: block;
+}

@@ -80,6 +80,10 @@ section {
     display: block;
 }
 
+.form-contact__input-select {
+    -webkit-appearance: none;
+}
+
 .form-contact__icon {
     left: 1px;
     color: #fefefe;
@@ -145,8 +149,8 @@ section {
 
 .message-checked {
     border: 2px solid #333333;
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
 }
 
 .message-checked:checked {
