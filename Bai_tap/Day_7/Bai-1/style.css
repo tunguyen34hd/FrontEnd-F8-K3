@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SFU";
+    src: url("../font/SFUSolexBold.TTF");
+}
+
+html {
+    font-family: "Asap", sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background: url("https://cdn.houseviet.vn/images/project/23042023/ha-noi-melody-residences-cover.jpg")
+        no-repeat center / cover;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    width: 640px;
+    background-color: #ffffffb7;
+    border-radius: 5px;
+    padding: 30px 25px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.container__heading {
+    color: #bf4240;
+    margin-bottom: 10px;
+}
+
+.container__dsc {
+    margin: 10px 0;
+    color: #5e4e4a;
+}
+
+.container__location {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.container__price {
+    border-radius: 5px;
+    font-size: 25px;
+    color: #f4eccf;
+    width: 150px;
+    max-width: 150px;
+    bottom: -15%;
+    right: 10%;
+    padding: 10px;
+    font-family: "SFU";
+    position: absolute;
+    text-align: center;
+    background-color: #dd5e56;
+}
