@@ -55,24 +55,32 @@ body {
 }
 
 .subnav {
-    width: 1200px;
+    width: 1500px;
     position: absolute;
-    padding: 20px;
-    display: none;
-    bottom: -1087%;
-    left: -510%;
+    padding: 30px 40px;
+    /* display: none; */
+    bottom: -690%;
+    left: -600%;
+    box-shadow: 0 10px 30px #8f8f8f;
+    border-radius: 8px;
+}
+
+.subnav li {
+    line-height: 40px;
 }
 
 .subnav::before {
     content: "";
     display: block;
+    position: absolute;
+    top: -5%;
     width: 100%;
     height: 30px;
 }
 
 .megabox {
     display: flex;
-    justify-content: space-between;
+    gap: 200px;
 }
 
 .nav-bar li:hover .subnav {
@@ -81,7 +89,7 @@ body {
 
 .megabox-list {
     display: flex;
-    gap: 100px;
+    gap: 140px;
 }
 
 .megabox-title {
