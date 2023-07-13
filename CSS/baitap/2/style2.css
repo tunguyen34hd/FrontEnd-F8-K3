@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.img {
+    margin: 10px 36px;
+    flex-basis: 130px;
+    width: 129px;
+    max-width: 200px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}

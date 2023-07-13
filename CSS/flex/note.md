@@ -45,3 +45,19 @@
 -   gap: căn chỉnh khoảng cách giữa các item
 
 ## Các thuộc tính trong nhóm Flex Item
+
+-   flex-grow: Dãn các item để lấp đầy các khoảng trống
+-   flex-shrink: tự động co lại các item
+-   flex-basis: Thiết lập các kích thước ban đầu cho các item (ko set dc width)
+    => flex-basis: sẽ bị chặn bởi min-width, max-width
+-   flex: grow shrink basis
+-   align-selft: Căn chỉnh 1 item
+
+*   stretch => Mặc định, full chiều cao
+*   flex-start
+*   center
+*   flex-end
+*   baseline
+
+-   order: Sắp xếp thứ tự các item
+    => Nhận số nguyên
