@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("./img/istockphoto-541114144-612x612.jpg") no-repeat top
+        right 15%;
+}
+
+.container {
+    width: 500px;
+    margin: 20px 0 0 10%;
+    font-family: "Inter", sans-serif;
+}
+
+.box {
+    display: flex;
+    padding: 20px;
+}
+
+.box__result {
+    width: 250px;
+    text-align: right;
+    transition: all 0.4s ease-in;
+}
+
+.box__result-heading {
+    font-family: "Space Grotesk", sans-serif;
+    margin-bottom: 15px;
+}
+
+.box__result-paragraph {
+    color: #98989a;
+    font-size: 14px;
+}
+
+.box__result button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 99px;
+    margin: 15px 0;
+    background-color: #f2f2f2;
+}
+
+.box__result button:hover {
+    background-color: #a26f5a;
+    color: #fff;
+}
+
+.dot-point {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    margin: 0 20px;
+    color: #56b8a8;
+    text-align: center;
+    line-height: 30px;
+    background-color: #e4e4e4;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+}
+
+.dot-point::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+    height: 200px;
+    top: 100%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.box:nth-last-child(1) .dot-point::before {
+    content: "";
+    display: none;
+}
+
+.box__timeline {
+    transition: all 0.4s ease-in;
+    line-height: 30px;
+}
+
+.box:hover .box__result {
+    transform: translateX(127%);
+    text-align: left;
+}
+
+.box:hover .box__timeline {
+    transform: translateX(-175%);
+}

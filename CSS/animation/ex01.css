@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    border: 1px solid red;
+    margin: 30px auto;
+    position: relative;
+}
+
+.box span {
+    width: 40px;
+    height: 40px;
+    display: block;
+    top: 0;
+    left: 0;
+    background: green;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes move {
+    /* from {
+        left: 0;
+        top: 0;
+    } */
+    25% {
+        left: 100%;
+        top: 0;
+        bottom: 100%;
+        translate: -100%;
+        background-color: blue;
+    }
+    50% {
+        left: 100%;
+        top: 100%;
+        translate: -100% -100%;
+        background-color: rgb(119, 0, 255);
+    }
+    75% {
+        top: 100%;
+        left: 0;
+        translate: 0 -100%;
+        background-color: rgb(255, 0, 221);
+    }
+    /* to {
+        top: 0;
+        left: 0;
+    } */
+}
+
+/* 
+1. @keyframes => Định  nghĩa ra hiệu ứng
+
+@keyframes {
+    from {
+
+    }
+    ... {
+
+    }
+    to {
+
+    }
+}
+
+2. Thuộc tính animation => gọi keyframes và các
+
+- animation-name: tenkeyframes;
+- animation-duration: thoigian (s, ms)
+- animation-timing-funciton: giống transition
+- animation-delay:
+*/

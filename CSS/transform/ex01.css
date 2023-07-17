@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    margin: 50px auto;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: green;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    /* border-radius: 50%; */
+    transition: all 0.4s linear;
+}
+
+.container:hover .box {
+    /* transform: rotate(360deg); */
+    /* rotate: 720deg; */
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(45deg) rotateZ(50deg); */
+    /* transform: rotateZ(50deg); */
+    /* transform: scale(3.5, 0.9); */
+    /* transform: scale(3.5, 0.9) rotate(45deg); */
+    /* scale: 1.5 1.2; */
+    /* transform: skew(80deg, 0deg); */
+    /* transform: translate(50px, 50px); */
+    translate: 50px 50px;
+}
+
+/* 
+Thuộc tính transform: thay đổi hình dạng của element
+1. Xoay
+- rotate()
+- rotateX()
+- rotateY()
+
+2. Phóng to thu nhỏ
+- scale(x, y)
+- ScaleX(x)
+- scaleY(y)
+
+3. Nghiêng
+- skew(x, y)
+- skewX(x)
+- skewY(y)
+
+4. Di chuyển
+- translate(x, y)
+- translateX(x)
+- translateY(y)
+
+*/
