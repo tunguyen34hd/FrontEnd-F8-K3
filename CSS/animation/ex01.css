@@ -77,5 +77,6 @@
 - animation-name: tenkeyframes;
 - animation-duration: thoigian (s, ms)
 - animation-timing-funciton: giống transition
-- animation-delay:
+- animation-iteration-count: solan | infinite
+- animation-delay: thoigian (s, ms)
 */
