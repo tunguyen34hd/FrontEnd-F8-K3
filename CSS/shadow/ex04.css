@@ -1,0 +1,11 @@
+.box {
+    height: 200px;
+    background: orange;
+    /* background: linear-gradient(to right bottom, red, rgb(70, 0, 128), pink); */
+    background: linear-gradient(
+        45deg,
+        rgb(241, 55, 55) 20%,
+        rgb(70, 0, 128) 30%,
+        pink 80%
+    );
+}

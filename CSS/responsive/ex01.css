@@ -1,0 +1,81 @@
+/* 
+    Luôn nhớ reset CSS
+    có 2 cách:
+    +   Dùng sao
+    +   (https://meyerweb.com/eric/tools/css/reset/) copy css rồi tạo file reset.css rồi link ở vị trí cao hơn để tránh bị ghi đè bởi link css khác
+*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/* 
+    1. Media query
+    2. Breakpoints
+*/
+
+/* @media screen and (min-width: 500px) and (max-width: 700px) {
+    h1 {
+        color: red;
+    }
+} */
+
+/* 
+    Breakpoints
+    - Mobile: 0 - 575px
+    - Tablet: 576 - 991px
+    - Desktop: >= 992px
+*/
+
+/* Mobile & Tablet */
+
+/* Mobile */
+@media (max-width: 575px) {
+    .mobile {
+        display: block;
+    }
+    .tablet,
+    .desktop {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 576px) and (max-width: 991px) {
+    .tablet {
+        display: block;
+    }
+    .mobile,
+    .desktop {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .desktop {
+        display: block;
+    }
+    .mobile,
+    .tablet {
+        display: none;
+    }
+}

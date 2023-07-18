@@ -1,0 +1,28 @@
+body {
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.chat {
+    position: relative;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #fff;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.chat::after {
+    content: "";
+    position: absolute;
+    right: 30px;
+    bottom: -22px;
+    border: 12px solid;
+    border-color: #fff transparent transparent;
+}
+
+img {
+    filter: drop-shadow(0 0 50px rgba(0, 0, 0, 0.781));
+}
