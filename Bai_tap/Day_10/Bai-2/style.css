@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3398da;
+    --text-color: #656565;
+    --white-color: #fdfdfd;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(145, 145, 145);
+}
+
+.inner {
+    margin-top: 50px;
+}
+
+input {
+    display: none;
+}
+
+.wrap {
+    width: 722px;
+    position: relative;
+    margin: 0 auto;
+    perspective: 800px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: var(--white-color);
+}
+
+ul li label {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+ul li:hover label {
+    background-color: var(--primary-color);
+}
+
+ul li:hover {
+    background-color: var(--white-color);
+    color: var(--white-color);
+}
+
+.content {
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 10px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    overflow-x: scroll;
+    background-color: var(--white-color);
+    transform-origin: top center;
+    transform: rotateX(-60deg);
+    transition: visibility opacity;
+    transition-duration: 0.5s;
+}
+
+.content h2 {
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+.content p {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+input#c1:checked ~ .wrap .content.c1 {
+    visibility: visible;
+    transform: rotateX(0);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+input#c2:checked ~ .wrap .content.c2 {
+    visibility: visible;
+    transform: rotateX(0);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+input#c3:checked ~ .wrap .content.c3 {
+    visibility: visible;
+    transform: rotateX(0);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+input#c4:checked ~ .wrap .content.c4 {
+    visibility: visible;
+    transform: rotateX(0);
+    opacity: 1;
+    transition-delay: 0.5s;
+}

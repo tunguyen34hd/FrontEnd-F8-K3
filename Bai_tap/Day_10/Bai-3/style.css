@@ -1,0 +1,158 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #313642;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box-mail {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 245px;
+    height: 135px;
+    background-color: #d14b46;
+    transition: all 0.3s;
+}
+
+.box-mail::before,
+.box-mail::after {
+    content: "";
+    position: absolute;
+    width: 245px;
+    height: 135px;
+    z-index: 2;
+}
+
+.box-mail::before {
+    background: linear-gradient(28deg, #e2514b 50%, transparent 50%);
+}
+
+.box-mail::after {
+    background: linear-gradient(151deg, transparent 50%, #e45e56 50%);
+}
+
+.box-mail:hover {
+    translate: 0 20px;
+}
+
+.cover-mail {
+    position: absolute;
+    border-style: solid;
+    border-width: 70px 123px;
+    border-color: #cf4a43 transparent transparent transparent;
+    transform-origin: top center;
+    transition: 0.2s;
+    transition-delay: 0.1s;
+    z-index: 3;
+}
+
+.box-mail:hover .cover-mail {
+    transform: rotateX(180deg);
+    z-index: -1;
+}
+
+.letter {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 125px;
+    background-color: #ffffff;
+    overflow: hidden;
+    transform-origin: bottom center;
+    transition: 0.2s;
+}
+
+.box-mail:hover .letter {
+    height: 222px;
+    transition-delay: 0.2s;
+}
+
+.border-letter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.border-letter span {
+    display: block;
+    width: 20px;
+    height: 15px;
+    background-color: #c95a5f;
+    transform: skew(-40deg);
+}
+
+.line-row span {
+    display: block;
+    margin: 20px 0 0 10px;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #c95a5f;
+    transform: none;
+    animation: colorAnimation 0.5s infinite;
+}
+
+.line-row span:nth-child(2) {
+    width: 30px;
+}
+
+.material-letter .circle {
+    width: 30px;
+    height: 30px;
+    background-color: #f0ced3;
+    border-radius: 50%;
+    margin: 20px 20px 0 auto;
+}
+
+.shadowm-box {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #0000008f;
+    filter: blur(40px);
+    transform: rotateX(82deg) translateZ(-170px);
+    box-shadow: 0 0 120px rgba(0, 0, 0, 0.856), 0 0 200px rgba(0, 0, 0, 0.61);
+    transition: all 0.3s;
+}
+
+.box-mail:hover .shadowm-box {
+    filter: blur(20px);
+    transform: rotateX(85deg) translateZ(-111px) translateY(50px);
+}
+
+@keyframes colorAnimation {
+    0% {
+        color: red;
+    }
+    14.29% {
+        color: orange;
+    }
+    28.57% {
+        color: yellow;
+    }
+    42.86% {
+        color: green;
+    }
+    57.14% {
+        color: blue;
+    }
+    71.43% {
+        color: indigo;
+    }
+    85.71% {
+        color: violet;
+    }
+    100% {
+        color: red;
+    }
+}

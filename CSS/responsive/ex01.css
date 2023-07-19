@@ -25,6 +25,7 @@ body {
 h1 {
     font-size: 50px;
     font-weight: 600;
+    display: none;
 }
 
 /* 
@@ -52,10 +53,6 @@ h1 {
     .mobile {
         display: block;
     }
-    .tablet,
-    .desktop {
-        display: none;
-    }
 }
 
 /* Tablet */
@@ -63,19 +60,11 @@ h1 {
     .tablet {
         display: block;
     }
-    .mobile,
-    .desktop {
-        display: none;
-    }
 }
 
 /* Desktop */
 @media (min-width: 992px) {
     .desktop {
         display: block;
-    }
-    .mobile,
-    .tablet {
-        display: none;
     }
 }
