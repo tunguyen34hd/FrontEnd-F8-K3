@@ -22,7 +22,7 @@ body {
     width: 245px;
     height: 135px;
     background-color: #d14b46;
-    transition: all 0.3s;
+    transition: all 0.3s linear;
 }
 
 .box-mail::before,
@@ -52,8 +52,8 @@ body {
     border-width: 70px 123px;
     border-color: #cf4a43 transparent transparent transparent;
     transform-origin: top center;
-    transition: 0.2s;
-    transition-delay: 0.1s;
+    transition: 0.3s linear;
+    transition-delay: 0.3s;
     z-index: 3;
 }
 
@@ -70,7 +70,7 @@ body {
     background-color: #ffffff;
     overflow: hidden;
     transform-origin: bottom center;
-    transition: 0.2s;
+    transition: 0.3s linear;
 }
 
 .box-mail:hover .letter {
