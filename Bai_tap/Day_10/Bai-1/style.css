@@ -119,8 +119,8 @@ input:checked ~ ul {
 }
 
 input:checked ~ .white-overlay {
-    width: 300vw;
-    height: 300vh;
+    width: calc(1000px * 8);
+    height: calc(1000px * 8);
 }
 
 ul li a:focus {
