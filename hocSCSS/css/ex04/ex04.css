@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.container {
+  position: relative;
+}
+.container > * {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+}
+.container div {
+  width: 300px;
+  border: 1px solid red;
+}
+
+/*
+Nếu $type = flex => căn giữa bằng flex
+Nếu $type = position => căn giữa bằng position
+Nếu $type = margin => căn giữa bằng margin
+Nếu $type = text => căn giữa bằng khối text-align
+*/
+
+/*# sourceMappingURL=ex04.css.map */

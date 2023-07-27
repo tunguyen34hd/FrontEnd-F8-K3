@@ -1,0 +1,56 @@
+/* 
+1. 576px
+2. 786px
+3. 992px
+4. 1200px
+5. 1400px
+*/
+
+/* body {
+    color: green;
+} */
+
+/* Desktop First*/
+/* @media screen and (max-width: 1399px) {
+}
+
+@media screen and (max-width: 1199px) {
+    body {
+        color: green;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        color: red;
+    }
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        color: yellow;
+    }
+} */
+
+body {
+    color: green;
+}
+
+/* Mobile First */
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+}

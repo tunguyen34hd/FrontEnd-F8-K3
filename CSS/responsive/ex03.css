@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-width: 1200px;
+    --column-space: 20px;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(-1 * var(--column-space) / 2);
+}
+
+.row [class^="col-"] {
+    --column-width: calc(100% / (12 / var(--column-size)));
+    flex-basis: var(--column-width);
+    max-width: var(--column-width);
+    padding: 0 calc(var(--column-space) / 2);
+}
+
+.col-1 {
+    --column-size: 1;
+}
+
+.col-2 {
+    --column-size: 1;
+}
+
+.col-3 {
+    --column-size: 3;
+}
+.col-4 {
+    --column-size: 4;
+}
+.col-5 {
+    --column-size: 5;
+}
+.col-6 {
+    --column-size: 6;
+}
+.col-7 {
+    --column-size: 7;
+}
+.col-8 {
+    --column-size: 8;
+}
+.col-9 {
+    --column-size: 9;
+}
+.col-10 {
+    --column-size: 10;
+}
+.col-11 {
+    --column-size: 11;
+}
+.col-12 {
+    --column-size: 12;
+}

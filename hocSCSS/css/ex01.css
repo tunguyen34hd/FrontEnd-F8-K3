@@ -1,0 +1,60 @@
+@charset "UTF-8";
+:root {
+  --primary-color: red;
+}
+
+.header {
+  padding: 20px;
+  padding: 20px 0;
+  background: green;
+}
+.header .header-inner {
+  display: flex;
+  justify-content: center;
+}
+.header .header-inner .logo {
+  max-height: 150px;
+}
+.header .header-inner .logo img {
+  max-width: 100%;
+  height: auto;
+}
+.header .header-inner .menu {
+  background-color: 0;
+}
+.header .header-inner .menu > ul {
+  list-style: none;
+  display: flex;
+}
+.header .header-inner .menu > ul > li > a {
+  display: block;
+  text-decoration: none;
+}
+.header .header-inner .menu > ul > li > a:hover {
+  background: green;
+}
+.header .header-inner .menu > ul > li > a:hover::after {
+  content: "";
+}
+.header .header-inner .menu > ul > li > a::before {
+  content: "";
+}
+.header .header-inner .menu > ul > li + li > a {
+  border: 1px solid #ccc;
+}
+.header ul.topbar {
+  list-style: none;
+}
+
+/* Comment của CSS thì SCSS vẫn biên dịch sang, còn comment SCSS thì không*/
+/*Comment CSS*/
+.footer {
+  padding: 20px;
+}
+.footer .copyright {
+  text-align: center;
+  color: #333;
+  color: #333;
+}
+
+/*# sourceMappingURL=ex01.css.map */

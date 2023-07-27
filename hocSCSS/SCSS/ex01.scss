@@ -1,0 +1,84 @@
+// Biến trong SCSS
+// Cú pháp: $tenbien
+// Nên đặt tên theo cú pháp camelCase
+
+$primaryColor: green;
+$secondaryColor: red;
+
+:root {
+    --primary-color: red;
+}
+
+.header {
+    $paddingHeader: 20px;
+    padding: $paddingHeader;
+    padding: 20px 0;
+    background: $primaryColor;
+    .header-inner {
+        display: flex;
+        justify-content: center;
+
+        .logo {
+            max-height: 150px;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .menu {
+            background-color: green($color: #000000);
+            > ul {
+                list-style: none;
+                display: flex;
+
+                > li {
+                    > a {
+                        display: block;
+                        text-decoration: none;
+                        &:hover {
+                            background: green;
+                            &::after {
+                                content: "";
+                            }
+                        }
+
+                        &::before {
+                            content: "";
+                        }
+                    }
+                    
+                    & + li {
+                        > a {
+                            border: 1px solid #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ul {
+        &.topbar {
+            list-style: none;
+        }
+    }
+}
+
+/* Comment của CSS thì SCSS vẫn biên dịch sang, còn comment SCSS thì không*/ 
+
+/*Comment CSS*/
+
+// Comment SCSS
+
+$footerCopyrightSelector: ".copyright";
+
+.footer {
+    $property: color;
+    padding: 20px;
+    #{$footerCopyrightSelector} {
+        text-align: center;
+        color: #333;
+        #{$property}: #333;
+    }
+}
