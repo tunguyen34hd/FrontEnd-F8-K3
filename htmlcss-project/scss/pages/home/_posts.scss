@@ -1,0 +1,105 @@
+.posts {
+    padding: 64px 0;
+
+    .posts-heading {
+        @include center(54%);
+        text-align: center;
+        h2 {
+            margin: 0;
+            font-size: 3.1rem;
+            font-weight: 800;
+        }
+
+        p {
+            margin: 23px 0 28px;
+        }
+    }
+
+    .posts-list {
+        .post-item {
+            .image {
+                img {
+                    border-radius: 6.667px;
+                }
+            }
+
+            .meta {
+                display: flex;
+                justify-content: space-between;
+                margin: 16.27px 0 16.67px;
+                li {
+                    &:first-child {
+                        a {
+                            color: $primaryColor;
+                            font-weight: 500;
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    &:last-child {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        color: #a3a3a3;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .title {
+                font-size: 2rem;
+                font-weight: 600;
+                margin: 16.27px 0;
+            }
+        }
+    }
+
+    .posts-more {
+        text-align: center;
+        margin-top: 79px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .posts {
+        padding: 30px 0;
+
+        .posts-heading {
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .posts {
+        padding: 20px 0;
+        .posts-heading {
+            max-width: 100%;
+        }
+
+        .posts-list {
+            .post-item {
+                margin-bottom: 20px;
+            }
+        }
+
+        .posts-more {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 575.89px) {
+    .posts {
+        .posts-list {
+            .post-item {
+                .image {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

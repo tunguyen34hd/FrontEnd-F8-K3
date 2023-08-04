@@ -1,0 +1,232 @@
+@mixin font($type, $tag, $style) {
+    $font-styles: (
+        title: (
+            h0: (
+                font-size: 6.8rem,
+            ),
+            h1: (
+                font-size: 5.2rem,
+            ),
+            h2: (
+                font-size: 3.8rem,
+                line-height: 4.9979rem,
+            ),
+            h3: (
+                font-size: 2.8rem,
+                font-weight: 700,
+            ),
+            h4: (
+                font-size: 2rem,
+                font-weight: 600,
+            ),
+            default: (
+                font-weight: 800,
+            ),
+        ),
+        text: (
+            p1: (
+                font-size: 2.8rem,
+                line-height: 3.2rem,
+            ),
+            p2: (
+                font-size: 2.4rem,
+                line-height: 3.7rem,
+            ),
+            p3: (
+                font-size: 2rem,
+                line-height: 2.6rem,
+            ),
+            p4: (
+                font-size: 1.6rem,
+                line-height: 2.45rem,
+            ),
+            default: (
+                font-weight: 400,
+            ),
+        ),
+        other: (
+            button1: (
+                font-size: 2.4rem,
+                font-weight: 700,
+            ),
+            button2: (
+                font-size: 2rem,
+                font-weight: 700,
+            ),
+            caption1: (
+                font-size: 1.8rem,
+                font-weight: 500,
+            ),
+            caption2: (
+                font-size: 1.2rem,
+                font-weight: 400,
+            ),
+            field: (
+                font-size: 1.8rem,
+                font-weight: 400,
+            ),
+            default: (
+                line-height: normal,
+            ),
+        ),
+    );
+
+    @if map-has-key($font-styles, $type) {
+        $styles: map-get($font-styles, $type);
+        $tag-styles: map-get($styles, $tag);
+        $default-styles: map-get($styles, default);
+
+        @each $property, $value in $default-styles {
+            #{$property}: $value;
+        }
+
+        @if map-has-key($tag-styles, font-size) {
+            font-size: map-get($tag-styles, font-size);
+        }
+
+        @if map-has-key($tag-styles, line-height) {
+            line-height: map-get($tag-styles, line-height);
+        }
+    }
+
+    @if $style == A {
+        font-weight: 600;
+    }
+    @if $type == link {
+        @include font(text, $tag, $style);
+        text-align: center;
+        &:hover {
+            color: var(--main-color);
+        }
+    }
+}
+
+@mixin button($type) {
+    $button-styles: (
+        primary: (
+            gap: 10px,
+            padding: 16px 14px,
+            background-color: var(--main-color),
+            color: var(--white),
+            hover-bg-color: var(--orange-600),
+            active-bg-color: var(--orange-700),
+        ),
+        secondary: (
+            gap: 4px,
+            padding: 14px 26px,
+            background-color: var(--white),
+            color: var(--content),
+            hover-bg-color: var(--main-color),
+            hover-color: var(--white),
+            active-bg-color: var(--green-900),
+            active-color: var(--white),
+        ),
+    );
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    @if map-has-key($button-styles, $type) {
+        $styles: map-get($button-styles, $type);
+        gap: map-get($styles, gap);
+        padding: map-get($styles, padding);
+        background-color: map-get($styles, background-color);
+        color: map-get($styles, color);
+        @include font(other, button2, A);
+        &:hover {
+            background-color: map-get($styles, hover-bg-color);
+            @if map-has-key($styles, hover-color) {
+                color: map-get($styles, hover-color);
+            }
+        }
+        &:active {
+            background-color: map-get($styles, active-bg-color);
+            @if map-has-key($styles, active-color) {
+                color: map-get($styles, active-color);
+            }
+        }
+    }
+    @if $type == checkout {
+        @include button(primary);
+        background: var(--content);
+        &:hover {
+            background-color: var(--orange-600);
+        }
+    }
+    &:disabled {
+        background-color: var(--gray-400);
+        color: var(--white);
+    }
+}
+
+@mixin flex($type, $justify, $align, $direction) {
+    $directions: (
+        row: row,
+        column: column,
+    );
+    $justifications: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: space-between,
+        around: space-around,
+    );
+    $alignments: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        baseline: baseline,
+        stretch: stretch,
+    );
+
+    display: flex;
+    @if map-has-key($directions, $type) {
+        flex-direction: map-get($directions, $type);
+    }
+    @if map-has-key($justifications, $justify) {
+        justify-content: map-get($justifications, $justify);
+    }
+    @if map-has-key($alignments, $align) {
+        align-items: map-get($alignments, $align);
+    }
+}
+
+@mixin responsive($device: desktop) {
+    $devices: (
+        desktop: 1399.98,
+        laptop: 1199.98,
+        tablet: 991.98,
+        mobile: 767.98,
+        mobile-sm: 575.98,
+    );
+    @each $deviceName, $deviceWidth in $devices {
+        @if $device == $deviceName {
+            @media (max-width: #{$deviceWidth}px) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin display($name: "") {
+    $selectorNone: ".d-none";
+    $selectorBlock: ".d-block";
+
+    @if ($name != "") {
+        $selectorNone: ".d-" + $name + "-none"; //.d-md-none
+        $selectorBlock: ".d-" + $name + "-block";
+    }
+
+    #{$selectorNone} {
+        display: none;
+    }
+
+    #{$selectorBlock} {
+        display: block;
+    }
+}
+
+@mixin center($width, $spacer: 0) {
+    max-width: $width;
+    margin: $spacer auto;
+}

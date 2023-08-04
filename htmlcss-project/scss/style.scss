@@ -1,0 +1,23 @@
+// Import Parts
+@import "parts/root";
+@import "parts/variables";
+@import "parts/fonts";
+@import "parts/reset";
+@import "parts/mixin";
+@import "parts/base";
+
+// Import Layouts
+@import "layout/header";
+@import "layout/footer";
+
+// Import Pages
+
+// 1. Home
+@import "pages/home/hero";
+@import "pages/home/counter";
+@import "pages/home/products";
+@import "pages/home/posts";
+@import "pages/home/features";
+@import "pages/home/quality";
+
+// 2. About

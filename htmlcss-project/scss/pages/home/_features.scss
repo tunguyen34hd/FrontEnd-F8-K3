@@ -1,0 +1,100 @@
+.features {
+    padding: 36px 0 116px;
+    position: relative;
+
+    .feature-heading {
+        text-align: center;
+        @include center(49.8%);
+        margin-bottom: 50px;
+
+        h2 {
+            font-weight: 800;
+            font-size: 3.1rem;
+            margin-bottom: 24.33px;
+        }
+    }
+    .feature-list {
+        display: flex;
+        justify-content: center;
+        column-gap: 25px;
+
+        .feature-item {
+            flex-basis: 28%;
+            max-width: 28%;
+            background-color: #fff;
+            border-radius: 8.333px;
+
+            .image {
+                margin-bottom: 24.17px;
+                img {
+                    display: block;
+                    border-radius: 8.333px;
+                }
+            }
+
+            .info {
+                padding: 0 18.33px 5px 27.5px;
+                h3 {
+                    font-weight: 600;
+                    font-size: 2rem;
+                    color: $secondaryColor;
+                    margin-bottom: 6.33px;
+                }
+
+                p {
+                    font-size: 1.58rem;
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 50%;
+        z-index: -1;
+        background: #fff0e7;
+        border-radius: 8.333px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .features {
+        padding: 30px 0;
+        .feature-heading {
+            max-width: 100%;
+        }
+        .feature-list {
+            flex-wrap: wrap;
+            .feature-item {
+                flex-basis: calc(50% - 25px);
+                max-width: calc(50% - 25px);
+                margin-bottom: 25px;
+                .image {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .features {
+        .feature-list {
+            .feature-item {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+
+        &::after {
+            top: 0;
+        }
+    }
+}
