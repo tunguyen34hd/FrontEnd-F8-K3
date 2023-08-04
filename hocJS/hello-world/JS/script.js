@@ -1,0 +1,1 @@
+hellowrold("console.log");
