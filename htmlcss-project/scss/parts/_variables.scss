@@ -5,3 +5,11 @@ $fontSize: 1.6rem;
 $textColor: #2c2c2c;
 $linkColor: #2c2c2c;
 $headingColor: #2c2c2c;
+
+$breakpoints: (
+    sm: 576,
+    md: 768,
+    lg: 992,
+    xl: 1200,
+    xxl: 1400,
+);

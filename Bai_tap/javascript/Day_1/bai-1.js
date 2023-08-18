@@ -1,7 +1,16 @@
-var a = 6;
-var b = 10;
-a = a + b;
-b = a - b;
-a = a - b;
+// Bài 1: Hoán vị 2 số
 
-console.log(`Hoán vị của 2 số a và b là: ${a}, ${b}`);
+var a = 10;
+var b = 20;
+console.log(`2 số trước khi hoán vị là: a = ${a}, b = ${b}`);
+// +, -
+// a = a + b;
+// b = a - b;
+// a = a - b;
+
+// *, /
+a = a * b;
+b = a / b;
+a = a / b;
+
+console.log(`2 số sau khi hoán vị là: a = ${a}, b = ${b}`);
