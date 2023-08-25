@@ -1,0 +1,25 @@
+.box {
+    margin: 40px auto 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-bottom: 40px;
+    width: 1340px;
+    border-bottom: 1px solid orange;
+}
+.box:nth-last-of-type(1) {
+    border-bottom: none !important;
+}
+.box:nth-of-type(2n) {
+    flex-direction: row-reverse;
+}
+.box .img img {
+    border-radius: 8px;
+}
+.box .info {
+    width: 800px;
+}
+.box .info p {
+    font-size: 18px;
+}
