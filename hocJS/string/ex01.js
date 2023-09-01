@@ -34,7 +34,7 @@ console.log(str.length);
 // 2. charAt() => Lấy ký tự theo index (index bắt đầu từ 0)
 console.log(str.charAt(1));
 for (var i = 0; i < str.length; i++) {
-    console.log(str.charAt(i));
+     console.log(str.charAt(i));
 }
 
 // 3. charCodeAt() => Lấy mã ASCII của ký tự theo index
@@ -43,10 +43,10 @@ console.log(str.charCodeAt(0));
 // 4. concat() => Nối chuỗi
 console.log(str.concat("f9", "f10", "f11"));
 
-// 5. indexOf(value) => tìm vị trí xuất hiện đầu tiên của chuỗi con trong chuỗi cha, nếu không tìm thấy thì trả về -1
+// 5. indexOf(value, start) => tìm vị trí xuất hiện đầu tiên của chuỗi con trong chuỗi cha, nếu ko tìm thấy thì trả về -1, tham số thứ 2 sẽ là vị trí bắt đầu tìm
 console.log(str.indexOf("F8"));
 
-// 6. lastIndexOf(value) => tìm vị trí cuối
+// 6. lastIndexOf(value) => tìm vị trí cuối, và có tham số thứ 2 là vị trí bắt đầu tìm
 console.log(str.lastIndexOf("F8"));
 
 // 7. includes(value) => Tìm chuỗi và trả về true/false
@@ -94,7 +94,7 @@ console.log(str.trim());
 
 // 17. match() => Cắt chuỗi dựa vào biểu thức chính quy (Regex)
 var content =
-    "lorem 0123456789  aaaaaaaa 038916161561 ababbababa +8412313654566545646546565421";
+     "lorem 0123456789  aaaaaaaa 038916161561 ababbababa +8412313654566545646546565421";
 // yêu cầu: Cắt ra các sđt trong đoạn văn trên
 var pattern = /(0|\+84)\d{9}/g;
 var phones = content.match(pattern);
