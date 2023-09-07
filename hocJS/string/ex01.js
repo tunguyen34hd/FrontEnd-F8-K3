@@ -74,7 +74,7 @@ Lưu ý: Hàm replace hỗ trợ thay thế dựa vào biểu thức chính quy 
 // 10. replaceAll(search, with) => Tìm kiếm và thay thế tất cả
 console.log(str.replaceAll("F8", "F88"));
 
-// 11. split() => Tách chuỗi thành mảng
+// 11. split() => Tách chuỗi thành mảng, và lấy điểm chung để cắt.
 console.log(str.split(" "));
 
 // 12. toLowerCase() => Chuyển thành chữ thường
