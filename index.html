@@ -1,481 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>F8-Offline</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-            rel="stylesheet"
-        />
-        <style>
-            * {
-                font-family: "Alfa Slab One", cursive;
-                font-family: "Bebas Neue", sans-serif;
-                font-family: "Poppins", sans-serif;
-                color: #fff;
-            }
-            html {
-                scroll-behavior: smooth;
-            }
-            body {
-                background-color: black;
-            }
-            a {
-                margin: 5px;
-                text-decoration: none;
-            }
-            ul {
-                list-style-type: none;
-            }
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>F8-Offline</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+         rel="stylesheet"
+      />
+      <style>
+         * {
+            font-family: "Alfa Slab One", cursive;
+            font-family: "Bebas Neue", sans-serif;
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+         }
+         html {
+            scroll-behavior: smooth;
+         }
+         body {
+            background-color: black;
+         }
+         a {
+            margin: 5px;
+            text-decoration: none;
+         }
+         ul {
+            list-style-type: none;
+         }
 
-            ul > li > a {
-                display: inline-block;
-                transition: transform 1s;
-            }
+         ul > li > a {
+            display: inline-block;
+            transition: transform 1s;
+         }
 
-            ul > li > a:hover {
-                animation: rotateInfinityAnimation 0.1s infinite linear;
-            }
+         ul > li > a:hover {
+            animation: rotateInfinityAnimation 0.1s infinite linear;
+         }
 
-            li > h2 > span {
-                animation: colorAnimation 3s infinite;
-            }
+         li > h2 > span {
+            animation: colorAnimation 3s infinite;
+         }
 
-            .btn-scroll-down {
-                font-size: 30px;
-                display: inline-block;
-                text-align: center;
-                width: 35px;
-                height: 35px;
-                border: 1px solid #fff;
-                border-radius: 50%;
-                position: fixed;
-                z-index: 2;
-                bottom: 13%;
-                left: 20%;
-                line-height: 39px;
-            }
+         .btn-scroll-down {
+            font-size: 30px;
+            display: inline-block;
+            text-align: center;
+            width: 35px;
+            height: 35px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            position: fixed;
+            z-index: 2;
+            bottom: 13%;
+            left: 20%;
+            line-height: 39px;
+         }
 
-            @keyframes rotateInfinityAnimation {
-                0% {
-                    transform: rotate(0deg);
-                }
-                100% {
-                    transform: rotate(360deg);
-                }
+         @keyframes rotateInfinityAnimation {
+            0% {
+               transform: rotate(0deg);
             }
+            100% {
+               transform: rotate(360deg);
+            }
+         }
 
-            @keyframes colorAnimation {
-                0% {
-                    color: red;
-                }
-                14.29% {
-                    color: orange;
-                }
-                28.57% {
-                    color: yellow;
-                }
-                42.86% {
-                    color: green;
-                }
-                57.14% {
-                    color: blue;
-                }
-                71.43% {
-                    color: indigo;
-                }
-                85.71% {
-                    color: violet;
-                }
-                100% {
-                    color: red;
-                }
+         @keyframes colorAnimation {
+            0% {
+               color: red;
             }
-        </style>
-    </head>
-    <body>
-        <h1>
-            <a
-                href="https://github.com/tunguyenhd/FrontEnd-F8-K3/tree/main/Bai_tap"
-                >List bài tập</a
-            >
-        </h1>
-        <!-- List -->
-        <ul>
-            <li>
-                <h2>Bài tập <span>Day 1</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_1/Bai_1"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_1/Bai_2"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_1/Bai_3"
-                            >Bài 3</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 2</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_2/bai_1"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_2/bai_2"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_2/bai_3"
-                            >Bài 3</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_2/bai_4"
-                            >Bài 4</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_2/bai_5"
-                            >Bài 5</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 3</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_3/Bai_1"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_3/Bai_2"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_3/Bai_3"
-                            >Bài 3</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_3/Bai_4"
-                            >Bài 4</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_3/Bai_5"
-                            >Bài 5</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 4</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_4/Bai-1"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_4/Bai-2"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_4/Bai-3"
-                            >Bài 3</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 5</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_5/Bai-1"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_5/Bai-2"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_5/Bai-3"
-                            >Bài 3</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 6</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_6/Bai-1"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_6/Bai-2"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_6/Bai-3"
-                            >Bài 3</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 7</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_7/Bai-1"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_7/Bai-2"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_7/Bai-3"
-                            >Bài 3</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 8</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_8/Bai-1"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_8/Bai-2"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_8/Bai-3"
-                            >Bài 3</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 9</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_9/Bai-1"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_9/Bai-2"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_9/Bai-3"
-                            >Bài 3</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 10</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_10/Bai-1"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_10/Bai-2"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_10/Bai-3"
-                            >Bài 3</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 11</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_11"
-                            >Bài 1</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 12</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_12"
-                            >Bài 1</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 21</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_21/Bai-1.html"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_21/Bai-2.html"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_21/Bai-3.html"
-                            >Bài 3</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_21/Bai-4.html"
-                            >Bài 4</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_21/Bai-5.html"
-                            >Bài 5</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 22</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_22/Bai-1/Bai-1.html"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_22/Bai-2/Bai-2.html"
-                            >Bài 2</a
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Bài tập <span>Day 23</span></h2>
-                <ul>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_23/Bai-1.html"
-                            >Bài 1</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_23/Bai-2.html"
-                            >Bài 2</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_23/Bai-3.html"
-                            >Bài 3</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_23/Bai-4.html"
-                            >Bài 4</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_23/Bai-5.html"
-                            >Bài 5</a
-                        >
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <footer id="scroll-down"></footer>
-        <a class="btn-scroll-down" href="#scroll-down">
-            <i class="bx bx-down-arrow-alt"></i>
-        </a>
-    </body>
+            14.29% {
+               color: orange;
+            }
+            28.57% {
+               color: yellow;
+            }
+            42.86% {
+               color: green;
+            }
+            57.14% {
+               color: blue;
+            }
+            71.43% {
+               color: indigo;
+            }
+            85.71% {
+               color: violet;
+            }
+            100% {
+               color: red;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <h1>
+         <a
+            href="https://github.com/tunguyenhd/FrontEnd-F8-K3/tree/main/Bai_tap"
+            >List bài tập</a
+         >
+      </h1>
+      <!-- List -->
+      <ul>
+         <li>
+            <h2>Bài tập <span>Day 1</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_1/Bai_1"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_1/Bai_2"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_1/Bai_3"
+                     >Bài 3</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 2</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_2/bai_1"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_2/bai_2"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_2/bai_3"
+                     >Bài 3</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_2/bai_4"
+                     >Bài 4</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_2/bai_5"
+                     >Bài 5</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 3</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_3/Bai_1"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_3/Bai_2"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_3/Bai_3"
+                     >Bài 3</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_3/Bai_4"
+                     >Bài 4</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_3/Bai_5"
+                     >Bài 5</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 4</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_4/Bai-1"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_4/Bai-2"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_4/Bai-3"
+                     >Bài 3</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 5</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_5/Bai-1"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_5/Bai-2"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_5/Bai-3"
+                     >Bài 3</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 6</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_6/Bai-1"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_6/Bai-2"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_6/Bai-3"
+                     >Bài 3</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 7</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_7/Bai-1"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_7/Bai-2"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_7/Bai-3"
+                     >Bài 3</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 8</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_8/Bai-1"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_8/Bai-2"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_8/Bai-3"
+                     >Bài 3</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 9</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_9/Bai-1"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_9/Bai-2"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_9/Bai-3"
+                     >Bài 3</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 10</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_10/Bai-1"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_10/Bai-2"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_10/Bai-3"
+                     >Bài 3</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 11</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_11"
+                     >Bài 1</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 12</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/htmlcssscss/Day_12"
+                     >Bài 1</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 21</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_21/Bai-1.html"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_21/Bai-2.html"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_21/Bai-3.html"
+                     >Bài 3</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_21/Bai-4.html"
+                     >Bài 4</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_21/Bai-5.html"
+                     >Bài 5</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 22</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_22/Bai-1/Bai-1.html"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_22/Bai-2/Bai-2.html"
+                     >Bài 2</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 23</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_23/Bai-1.html"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_23/Bai-2.html"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_23/Bai-3.html"
+                     >Bài 3</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_23/Bai-4.html"
+                     >Bài 4</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_23/Bai-5.html"
+                     >Bài 5</a
+                  >
+               </li>
+            </ul>
+         </li>
+         <li>
+            <h2>Bài tập <span>Day 24</span></h2>
+            <ul>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_24/Bai-1.html"
+                     >Bài 1</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_24/Bai-2.html"
+                     >Bài 2</a
+                  >
+               </li>
+               <li>
+                  <a
+                     href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/javascript/Day_24/Bai-3.html"
+                     >Bài 3</a
+                  >
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <footer id="scroll-down"></footer>
+      <a class="btn-scroll-down" href="#scroll-down">
+         <i class="bx bx-down-arrow-alt"></i>
+      </a>
+   </body>
 </html>

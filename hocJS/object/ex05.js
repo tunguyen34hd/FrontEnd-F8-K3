@@ -3,12 +3,12 @@
 // Ví dụ: Person, CustomerService,...
 
 function Person(name, email) {
-     // Sử dụng từ khóa this để định nghĩa ra các thuộc tính và phương thức
-     this.name = name;
-     this.email = email;
-     this.getName = function () {
-          return this.name;
-     };
+    // Sử dụng từ khóa this để định nghĩa ra các thuộc tính và phương thức
+    this.name = name;
+    this.email = email;
+    this.getName = function () {
+        return this.name;
+    };
 }
 Person.prototype.gender = "female";
 
@@ -33,22 +33,22 @@ var boy = new Person("Dương", "duong@gmail.com");
 */
 
 function Calculator(a, b) {
-     this.a = a;
-     this.b = b;
-     this.add = function () {
-          return +a + +b;
-     };
-     this.sub = function () {
-          return a - b;
-     };
-     this.mul = function () {
-          return a * b;
-     };
-     if (b !== 0) {
-          this.div = function () {
-               return a / b;
-          };
-     }
+    this.a = a;
+    this.b = b;
+    this.add = function () {
+        return +a + +b;
+    };
+    this.sub = function () {
+        return a - b;
+    };
+    this.mul = function () {
+        return a * b;
+    };
+    if (b !== 0) {
+        this.div = function () {
+            return a / b;
+        };
+    }
 }
 
 var calc = new Calculator(5, 1);
@@ -58,7 +58,7 @@ var calc = new Calculator(5, 1);
 // console.log(calc.div());
 
 var getMessage = function () {
-     //  console.log("Hello F8");
+    //  console.log("Hello F8");
 };
 
 window.getMessage();
@@ -89,11 +89,11 @@ var d = false;
 // => Không áp dụng cho null và undefined
 
 var User = function () {
-     this.name = "Hoang an";
-     this.email = "hoangan.web@gmail.com";
-     console.log("Hoang An F8");
+    this.name = "Hoang an";
+    this.email = "hoangan.web@gmail.com";
+    console.log("Hoang An F8");
 
-     return "hello F8";
+    return "hello F8";
 };
 
 var user = new User();
@@ -103,14 +103,14 @@ var user = new User();
 
 // Nối 2 Object
 var a = {
-     name: "An",
-     age: 31,
-     title: "Dev",
+    name: "An",
+    age: 31,
+    title: "Dev",
 };
 
 var b = {
-     email: "hoangan.web@gmail.com",
-     title: "Giảng viên",
+    email: "hoangan.web@gmail.com",
+    title: "Giảng viên",
 };
 
 // Object.keys(b).forEach(function (key) {
@@ -136,21 +136,21 @@ var b = {
 // console.log(a, b);
 
 var query = {
-     name: "Hoang An F8",
-     status: 1,
-     category: 1,
-     keyword: "Fullstack Offline",
+    name: "Hoang An F8",
+    status: 1,
+    category: 1,
+    keyword: "Fullstack Offline",
 };
 
 // Output: name=Hoàng+An+F8&status=1&category=1&keyword=Fullstack+Offline
 // Lưu ý: không sử dụng hàm URLSearchParams và các thư viện liên quan
 
 var result = Object.entries(query)
-     .map(function (item) {
-          return item.join("=");
-     })
-     .join("&")
-     .replaceAll(" ", "+");
+    .map(function (item) {
+        return item.join("=");
+    })
+    .join("&")
+    .replaceAll(" ", "+");
 console.log(result);
 
 // Bài tập
@@ -174,16 +174,16 @@ Gợi ý:
 var queryString = url.split("?").slice(-1).join();
 
 var result = {};
-var query = queryString
-     .split("&")
-     .map(function (item) {
-          return item.split("=");
-     })
-     .forEach(function (item) {
-          if (item[1].length > 0) {
-               result[item[0]] = item[1].replaceAll("+", " ");
-          }
-     });
+queryString
+    .split("&")
+    .map(function (item) {
+        return item.split("=");
+    })
+    .forEach(function (item) {
+        if (item[1].length > 0) {
+            result[item[0]] = item[1].replaceAll("+", " ");
+        }
+    });
 // query = Object.fromEntries(query);
 // console.log(query);
 
