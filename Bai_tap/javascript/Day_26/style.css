@@ -1,0 +1,102 @@
+body {
+   font-family: Arial, sans-serif;
+   background: #8758ff;
+}
+
+#todo-list {
+   /* margin-top: 50px; */
+   width: 442px;
+   margin: 50px auto;
+   background: #1a1a40;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 32px;
+   border-radius: 6px;
+}
+
+#todo-list h1 {
+   color: white;
+   font-size: 28px;
+}
+
+ul {
+   width: 395px;
+   list-style-type: none;
+   padding: 0;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+
+li {
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #8758ff;
+   border-radius: 6px;
+   padding: 5px 16px;
+}
+
+.todoForm {
+   width: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.todoForm input[type="text"] {
+   padding: 8px 16px;
+   width: 288px;
+   border: 1px solid #8758ff;
+   outline: none;
+   color: #fff;
+   background: none;
+}
+
+#add-task {
+   padding: 9px;
+   background-color: #8758ff;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.taskText {
+   color: #fff;
+   flex-grow: 1;
+   cursor: pointer;
+}
+
+.edit,
+.delete {
+   padding: 5px;
+   background-color: #8758ff;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.save {
+   padding: 9px;
+   background-color: #8758ff;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.edit i,
+.delete i {
+   font-size: 16px;
+}
+
+.text-edit {
+   padding: 8px 16px;
+   width: 288px;
+   border: 1px solid #8758ff;
+   outline: none;
+   color: #fff;
+   background: none;
+}
