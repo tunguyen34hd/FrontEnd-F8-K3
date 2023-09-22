@@ -13,9 +13,9 @@ console.log(typeof users);
 
 // Kiểm tra 1 biến có phải là mảng hay không ?
 if (Array.isArray(users)) {
-    console.log("Đây là mảng");
+   console.log("Đây là mảng");
 } else {
-    console.log("Đây không phải mảng");
+   console.log("Đây không phải mảng");
 }
 
 // Thêm phần tử vào cuối mảng
@@ -39,10 +39,12 @@ console.log(users[0]);
 //     console.log(users[index], index);
 // }
 
+// Trả về index (in)
 // for (var index in users) {
 //     console.log(users[index], index);
 // }
 
+// Trả về value (of)
 // for (var value of users) {
 //     console.log(value);
 // }
@@ -90,19 +92,19 @@ var newArr = [];
 
 // C2:
 for (var i = 0; i < customers.length + users.length; i++) {
-    if (i < users.length) {
-        newArr[newArr.length] = users[i];
-    } else {
-        var indexCustomer = i - users.length;
+   if (i < users.length) {
+      newArr[newArr.length] = users[i];
+   } else {
+      var indexCustomer = i - users.length;
 
-        newArr[newArr.length] = customers[indexCustomer];
-    }
+      newArr[newArr.length] = customers[indexCustomer];
+   }
 
-    //   if (i < users.length) {
-    //     newArr[newArr.length] = users[i];
-    //     continue;
-    //   }
-    //   newArr[newArr.length] = customers[i - users.length];
+   //   if (i < users.length) {
+   //     newArr[newArr.length] = users[i];
+   //     continue;
+   //   }
+   //   newArr[newArr.length] = customers[i - users.length];
 }
 console.log(newArr);
 
