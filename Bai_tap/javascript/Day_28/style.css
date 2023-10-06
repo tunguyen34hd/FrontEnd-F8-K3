@@ -10,6 +10,8 @@
 }
 
 .player .play-btn {
+   width: 20px;
+   margin: 0 auto;
    text-align: center;
    cursor: pointer;
 }
@@ -35,7 +37,7 @@
    left: 0;
    bottom: 0;
    width: 0;
-   background: red;
+   background: rgb(191, 0, 255);
 }
 
 .progress-bar .progress span {
@@ -50,13 +52,18 @@
    translate: 50% -50%;
 }
 .tooltips-time {
+   padding: 3px 15px;
+   border-radius: 99px;
    position: absolute;
    bottom: 140%;
    left: 0;
    transform: translateX(-50%);
-   background-color: #333;
+   background-color: #8e00ff;
    color: #fff;
    font-size: 14px;
+   line-height: 20px;
+   text-align: center;
+   display: none;
 }
 
 .audio {

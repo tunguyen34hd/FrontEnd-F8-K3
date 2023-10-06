@@ -132,6 +132,7 @@ audio.addEventListener("timeupdate", function () {
    // Cập nhật width vào progress
    progress.style.width = `${percent}%`;
 });
+
 audio.addEventListener("timeupdate", function () {
    if (!isDragging) {
       var progress = (audio.currentTime / audio.duration) * 100;
@@ -152,10 +153,6 @@ progressBar.addEventListener("mouseup", function (e) {
    var newTime = clickPosition * audio.duration;
 
    audio.currentTime = newTime;
-
-   if (isPlaying) {
-      audio.play();
-   }
 
    isDragging = false;
 });

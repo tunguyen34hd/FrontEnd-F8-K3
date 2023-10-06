@@ -1,0 +1,30 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+table tr td {
+   height: 50px;
+}
+table tr th {
+   height: 30px;
+}
+h3 {
+   padding: 20px 0;
+}
+
+.list-products {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.list-productss {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pd-5 {
+   padding: 5px;
+   margin: 10px 10px 0 0;
+}
