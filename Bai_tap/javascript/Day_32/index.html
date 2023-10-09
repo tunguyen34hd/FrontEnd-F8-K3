@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./style.css" />
+   </head>
+   <body>
+      <div class="container">
+         <div class="title">
+            <h4>Doc Editor</h4>
+         </div>
+         <div class="tool-box">
+            <div class="tool-save">
+               <div class="btn-save-container">
+                  <button class="btn btn-save">file</button>
+                  <div class="drop-menu">
+                     <button id="new-btn" class="btn-drop-down">New</button>
+                     <button id="txt-btn" class="btn-drop-down">
+                        Save as TXT
+                     </button>
+                     <button id="pdf-btn" class="btn-drop-down">
+                        Save as PDF
+                     </button>
+                  </div>
+               </div>
+               <input type="text" class="input-save" value="untitled" />
+            </div>
+            <div class="tool-edit">
+               <button class="btn btn-edit-text" id="bold-btn"><b>b</b></button>
+               <button class="btn btn-edit-text" id="underline-btn">
+                  <u>u</u>
+               </button>
+               <button class="btn btn-edit-text" id="italic-btn">
+                  <i>i</i>
+               </button>
+               <input type="color" id="color-chosen" />
+            </div>
+         </div>
+         <div id="content" contenteditable="true" spellcheck="false"></div>
+      </div>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+         integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+      <script src="./index.js"></script>
+   </body>
+</html>

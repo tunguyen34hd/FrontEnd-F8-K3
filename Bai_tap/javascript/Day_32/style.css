@@ -1,0 +1,95 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+}
+
+body {
+   font-family: "Segoe UI", sans-serif;
+}
+
+.btn {
+   border-radius: 0.3rem;
+   border: none;
+   cursor: pointer;
+   padding: 5px 15px;
+   color: #fff;
+}
+
+.container {
+   margin: 0 37px;
+   padding: 0 12px;
+}
+
+.container .title {
+   padding: 10px;
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+
+.tool-box {
+   display: flex;
+   justify-content: space-between;
+}
+
+.tool-save {
+   display: flex;
+   justify-content: space-between;
+}
+
+.btn-save-container {
+   position: relative;
+}
+
+.btn-save-container .btn-save {
+   background: #0d6efd;
+}
+
+.btn-save-container .drop-menu {
+   display: none;
+   top: 30px;
+   background: #fff;
+   position: absolute;
+   padding: 10px 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.drop-menu .btn-drop-down {
+   text-align: left;
+   width: 158px;
+   background: #fff;
+   border: none;
+   padding: 5px 15px;
+   cursor: pointer;
+}
+
+.drop-menu .btn-drop-down:hover {
+   background-color: #ccc;
+}
+
+.tool-save .input-save {
+   margin-left: 10px;
+}
+
+.tool-edit {
+   display: flex;
+   gap: 10px;
+}
+
+.tool-edit .btn-edit-text {
+   background: #000;
+   color: #fff;
+}
+.tool-edit input {
+   height: 100%;
+}
+
+#content {
+   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+   margin: 30px 0;
+   min-height: 300px;
+   outline: none;
+   padding: 20px;
+}
