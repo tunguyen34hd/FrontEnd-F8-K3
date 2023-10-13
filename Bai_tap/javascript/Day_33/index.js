@@ -5,8 +5,6 @@ var btn = timer.querySelector(".action .btn");
 var time = 3000;
 
 function updateCountdown() {
-   time--;
-
    counter.textContent = Math.ceil(time / 100);
 
    if (time <= 0) {
@@ -14,6 +12,7 @@ function updateCountdown() {
    } else {
       requestAnimationFrame(updateCountdown);
    }
+   time--;
 }
 
 btn.addEventListener("click", function () {
