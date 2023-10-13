@@ -2,7 +2,7 @@ var timer = document.querySelector(".timer");
 var counter = timer.querySelector(".counter");
 var btn = timer.querySelector(".action .btn");
 
-var time = 3000;
+var time = 500;
 
 function updateCountdown() {
    counter.innerText = Math.ceil(time / 100);
