@@ -5,7 +5,7 @@ var btn = timer.querySelector(".action .btn");
 var time = 3000;
 
 function updateCountdown() {
-   counter.textContent = Math.ceil(time / 100);
+   counter.innerText = Math.ceil(time / 100);
 
    if (time <= 0) {
       btn.disabled = false;
