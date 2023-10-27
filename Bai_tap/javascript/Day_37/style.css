@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto Slab", serif;
+}
+
+.header {
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2f89fc;
+}
+
+.header .logo {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.header .menu ul li {
+    padding: 10px 50px;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header .icon i {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.banner {
+   height: 200px;
+}
+
+.banner img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+#gallary-container {
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+.products {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 50px;
+}
+
+.product {
+    border: 1px solid #aaa;
+    padding: 30px;
+}
+
+.product-name {
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.product .thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.product .thumb img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row > div {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.row > div + div {
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.row > div + div > div + div {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.row > div + div > div:first-child {
+    width: 30px;
+}
+
+.price {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 35px;
+    color: #2f89fc;
+}
+
+.actions {
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions div {
+    padding: 10px 14px;
+    border: 2px solid red;
+    border-radius: 6px;
+}
+
+.add-to-cart {
+    background-color: #eee;
+    color: red;
+}
+
+.buy {
+    background-color: red;
+    color: #fff;
+}
+
+/* Skeleton */
+.skeleton {
+    opacity: 0.6;
+    animation: skeleton-bg 1s linear infinite alternate;
+}
+
+.skeleton-text {
+    height: 1em;
+    margin-bottom: 0.2em;
+}
+
+.skeleton-image {
+   height: 100%;
+   width: 100%;
+}
+
+@keyframes skeleton-bg {
+    0% {
+        background-color: hsl(200, 20%, 80%);
+    }
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
