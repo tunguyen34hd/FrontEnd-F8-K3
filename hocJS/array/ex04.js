@@ -15,7 +15,7 @@ callback có 3 tham số:
 - current: giá trị các phần tử mảng
 - index: index của từng phần tử
 
-=> Giá trị trả về của reduce là lần return cuối cùng cảu callback
+=> Giá trị trả về của reduce là lần return cuối cùng của callback
 */
 var numbers = [5, 10, 15, 20, 25];
 // var result = numbers.reduce(function (prev, current, index) {
