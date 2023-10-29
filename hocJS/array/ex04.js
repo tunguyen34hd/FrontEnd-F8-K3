@@ -5,12 +5,12 @@ callback có 3 tham số:
 - prey:
     + TH1: ko có iniitialValue:
         Lần lặp thứ nhất: prev chính là phần tử mảng đầu tiên
-        Lần lặp thứ hai trở đi: prev là return của lần lặp thứ trước
+        Lần lặp thứ hai trở đi: prev là return của lần lặp trước
         => Bớt đi 1 lần lặp
 
     + TH2: Có iniitialValue
         Lần lặp thứ nhất: prev chính là giá trị iniitialValue
-        Lần lặp thứ hai trở đi: prev là return của lần lặp thứ trước
+        Lần lặp thứ hai trở đi: prev là return của lần lặp trước
 
 - current: giá trị các phần tử mảng
 - index: index của từng phần tử
@@ -25,8 +25,8 @@ var numbers = [5, 10, 15, 20, 25];
 // console.log(result);
 
 var result = numbers.reduce(function (prev, current) {
-    console.log(prev, current);
-    return prev + current;
+   console.log(prev, current);
+   return prev + current;
 }, 0);
 console.log(`Result = ${result}`);
 
@@ -42,8 +42,8 @@ console.log(`Result = ${result}`);
 var numbers = [2, 9, -1, 6, 8];
 // Cach 1
 var result = numbers.reduce(function (prev, current) {
-    if (current < prev) return prev;
-    return current;
+   if (current < prev) return prev;
+   return current;
 });
 console.log(result);
 
@@ -65,11 +65,11 @@ var studentActive = ["Dương", "Hải", "Vương"];
 // ["An", "Khang"]
 
 var studentInactive = students.reduce(function (prev, current) {
-    // console.log(prev, current);
-    if (!studentActive.includes(current)) {
-        prev.push(current);
-    }
-    return prev;
+   // console.log(prev, current);
+   if (!studentActive.includes(current)) {
+      prev.push(current);
+   }
+   return prev;
 }, []);
 
 console.log(studentInactive);
