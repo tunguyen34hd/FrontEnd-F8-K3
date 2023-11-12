@@ -3,7 +3,7 @@ import { requestRefresh } from "./utils.js";
 const { SERVER_API } = config;
 
 export const client = {
-   requestRefresh: null, // Lưu promise của
+   requestRefresh: null, //Lưu promise của hàm requestRefresh
    serverApi: SERVER_API, //1
    token: null,
    //2
@@ -38,18 +38,15 @@ export const client = {
          if (!response.ok) {
             if (!this.requestRefresh) {
                this.requestRefresh = requestRefresh(this);
+               const newToken = await this.requestRefresh;
+               if (newToken) {
+                  //Xử lý --> Lưu token vào localStorage
+                  this.token = newToken.access_token;
+                  //Xử lý --> Gọi lại hàm send
+                  return this.send(path, method, body);
+               }
             }
-
-            const newToken = await this.requestRefresh;
-
-            if (newToken) {
-               //Xử lý --> Lưu token vào localStorage
-               this.token = newToken.access_token;
-               //Xử lý --> Gọi lại hàm send
-               return this.send(path, method, body);
-            } else {
-               //Logout
-            }
+            return false;
          }
          const data = await response.json();
          return { response, data };

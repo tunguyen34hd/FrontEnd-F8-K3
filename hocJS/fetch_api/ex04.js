@@ -50,56 +50,11 @@ const app = {
           <div class="d-grid">
             <button class="btn btn-primary">Đăng nhập</button>
           </div>
-          <div class="d-grid">
-          <button class="btn btn-dki btn-primary">Đăng kí</button>
-          </div>
           <div class="msg text-danger text-center"></div>
         </form>
       </div>
     </div>
   </div>`;
-   },
-   registerForm: function () {
-      return `<div class="container py-3">
-      <div class="row justify-content-center">
-        <div class="col-7">
-          <h2 class="text-center">Đăng nhập</h2>
-          <form action="">
-           <div class="mb-3">
-              <label for="">Tên</label>
-              <input
-                type="text"
-                name="textname"
-                class="form-control"
-                placeholder="Nhập tên..."
-              />
-            </div>
-            <div class="mb-3">
-              <label for="">Email</label>
-              <input
-                type="email"
-                name="email"
-                class="form-control"
-                placeholder="Email..."
-              />
-            </div>
-            <div class="mb-3">
-              <label for="">Password</label>
-              <input
-                type="password"
-                name="password"
-                class="form-control"
-                placeholder="Password..."
-              />
-            </div>
-            <div class="d-grid">
-              <button class="btn btn-primary">Đăng Kí</button>
-            </div>
-            <div class="msg text-danger text-center"></div>
-          </form>
-        </div>
-      </div>
-    </div>`;
    },
    addEvent: function () {
       root.addEventListener("submit", (e) => {
@@ -112,10 +67,6 @@ const app = {
          if (e.target.classList.contains("logout")) {
             e.preventDefault();
             this.handleLogout();
-         }
-         if (e.target.classList.contains("btn-dki")) {
-            e.preventDefault();
-            root.innerHTML = this.registerForm();
          }
       });
    },
@@ -170,13 +121,16 @@ const app = {
         <h2 class="text-center">Chờ tý...</h2>
         </div>`;
             client.setToken(accessToken);
-            const { data: user, response } = await client.get("/auth/profile");
-            if (!response.ok) {
-               // this.loginStatus = false;
-               // this.handleLogout();
+            const result = await client.get("/auth/profile");
+
+            if (!result) {
+               //Refresh hết hạn -> Logout
+               this.handleLogout();
                return;
             }
-            // console.log(user);
+
+            const { data: user } = result;
+
             this.loginStatus = true;
             this.user = user;
             this.render();
