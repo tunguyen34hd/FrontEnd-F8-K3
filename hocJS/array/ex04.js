@@ -3,13 +3,13 @@
 
 callback có 3 tham số:
 - prey:
-    + TH1: ko có iniitialValue:
+    + TH1: ko có initialValue:
         Lần lặp thứ nhất: prev chính là phần tử mảng đầu tiên
         Lần lặp thứ hai trở đi: prev là return của lần lặp trước
         => Bớt đi 1 lần lặp
 
-    + TH2: Có iniitialValue
-        Lần lặp thứ nhất: prev chính là giá trị iniitialValue
+    + TH2: Có initialValue
+        Lần lặp thứ nhất: prev chính là giá trị initialValue
         Lần lặp thứ hai trở đi: prev là return của lần lặp trước
 
 - current: giá trị các phần tử mảng

@@ -11,20 +11,20 @@ Object.prototype.tenphuongthuc = function(){
     Lưu ý: prototype sẽ ảnh hưởng tới tất cả kiểu dữ liệu (trừ null, undefined), nếu gán vào hàm tạo Object
 */
 Object.prototype.getFirst = function () {
-    var keys = Object.keys(this);
-    var firstKey = keys[0];
-    return this[firstKey];
+   var keys = Object.keys(this);
+   var firstKey = keys[0];
+   return this[firstKey];
 };
 var user = {
-    name: "Hoang An",
-    email: "hoangan@gmail.com",
+   name: "Hoang An",
+   email: "hoangan@gmail.com",
 };
 
 Object.prototype.message = "F8";
 
 var customer = {
-    email: "contact@fullstack.com",
-    age: 31,
+   email: "contact@fullstack.com",
+   age: 31,
 };
 // Yêu cầu: Mỗi object => Viết 1 phương thức để lấy ra giá trị của thuộc tính đầu tiên
 
@@ -59,6 +59,8 @@ var customer = {
 
 // String.prototype.getLast = function () {
 //     return this.split(" ").slice(-1).join();
+//     return this.slice(this.lastIndexOf(" "));
+
 // };
 // var fullname = "Hoang An";
 // console.log(fullname.getLast()); //An
@@ -69,22 +71,22 @@ var customer = {
 - Chỉ được dùng: các vòng lặp cơ sở, câu lệnh rẽ nhánh,...
 */
 Array.prototype.map2 = function (callback) {
-    if (typeof callback !== "function") {
-        return;
-    }
-    var newArr = [];
-    if (this.length) {
-        for (var i = 0; i < this.length; i++) {
-            var value = this[i];
-            var result = callback(value, i);
-            newArr[newArr.length] = result;
-        }
-    }
-    return newArr;
+   if (typeof callback !== "function") {
+      return;
+   }
+   var newArr = [];
+   if (this.length) {
+      for (var i = 0; i < this.length; i++) {
+         var value = this[i];
+         var result = callback(value, i);
+         newArr[newArr.length] = result;
+      }
+   }
+   return newArr;
 };
 
 var users = ["An", "Tuấn", "Sơn"];
 var newArr = users.map2(function (user, index) {
-    return `${index} - ${user}`;
+   return `${index} - ${user}`;
 });
 console.log(newArr);

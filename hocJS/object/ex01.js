@@ -13,12 +13,12 @@ var user = ["Hoang An", ""];
 
 // Cách khai báo Object
 var user = {
-    // key: value
-    name: "Hoang An",
-    email: "abc@gamil.com",
-    getCourse: function () {
-        return "Front-End";
-    },
+   // key: value
+   name: "Hoang An",
+   email: "abc@gamil.com",
+   getCourse: function () {
+      return "Front-End";
+   },
 };
 
 /*
