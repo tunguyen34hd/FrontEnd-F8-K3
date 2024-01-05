@@ -4,6 +4,7 @@
 //      email: "hoangan@gmail.com",
 // };
 // var b = a;
+
 // // Copy Object
 // var b = Object.assign({}, a); //shallow copy
 // var b = { ...a }; //Spread (ES6) => Shallow copy
