@@ -35,7 +35,7 @@ Các kiểu dữ liệu khác chuyển sang number
 // a = +a;
 // console.log(a);
 
-// Các ngoại lệ
+// Các ngoại lệ khi ép kiểu bằng Number()
 // true => 1
 // false => 0
 // [] => 0
@@ -51,35 +51,17 @@ Các kiểu dữ liệu khác chuyển sang number
 // console.log(Number(a));
 
 // Bài tập:
-var arr = [
-    5,
-    "10",
-    20,
-    1,
-    true,
-    false,
-    undefined,
-    null,
-    NaN,
-    Infinity,
-    -Infinity,
-    "F8",
-];
+var arr = [5, "10", 20, 1, true, false, undefined, null, NaN, Infinity, -Infinity, "F8"];
 // Yêu cầu: Tính tổng các số lẻ
 var total = arr.reduce(function (prev, current) {
-    // console.log(current, Number(current));
-    if (current !== true) {
-        current = Number(current);
-        if (
-            !isNaN(current) &&
-            current !== Infinity &&
-            current !== -Infinity &&
-            current % 2 !== 0
-        ) {
-            return prev + current;
-        }
-    }
-    return prev;
+   // console.log(current, Number(current));
+   if (current !== true) {
+      current = Number(current);
+      if (!isNaN(current) && current !== Infinity && current !== -Infinity && current % 2 !== 0) {
+         return prev + current;
+      }
+   }
+   return prev;
 }, 0);
 
 console.log(total);
@@ -114,8 +96,8 @@ var a = 12.5678;
 // Chuyển đổi định dạng số
 var price = 12000000000;
 price = price.toLocaleString("vi", {
-    style: "currency",
-    currency: "VND",
+   style: "currency",
+   currency: "VND",
 });
 console.log(price);
 
@@ -133,9 +115,9 @@ console.log(Math);
 console.log(Math.random());
 
 function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+   min = Math.ceil(min);
+   max = Math.floor(max);
+   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 console.log(getRandomInt(1, 100));
@@ -145,13 +127,11 @@ var seconds = 295; //295 giây
 // Viết hàm chuyển đổi thành định dạng: phút:giây
 // vd: 04:30
 var getTime = function (value) {
-    var mins = Math.floor(value / 60);
-    value -= mins * 60;
-    value = Math.floor(value);
+   var mins = Math.floor(value / 60);
+   value -= mins * 60;
+   value = Math.floor(value);
 
-    return `${mins < 10 ? "0" + mins : mins}:${
-        value < 10 ? "0" + value : value
-    }`;
+   return `${mins < 10 ? "0" + mins : mins}:${value < 10 ? "0" + value : value}`;
 };
 
 console.log(getTime(seconds));
