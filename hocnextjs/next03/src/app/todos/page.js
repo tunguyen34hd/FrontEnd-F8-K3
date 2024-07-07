@@ -1,5 +1,9 @@
-import TodoForm from "./TodoForm";
-import TodoList from "./TodoList";
+import TodoForm from "./TodoForm/TodoForm";
+import TodoList from "./TodoList/TodoList";
+export const metadata = {
+   title: "Danh sach cong viec",
+   description: "Quan ly cong viec",
+};
 
 const TodoPage = () => {
    return (

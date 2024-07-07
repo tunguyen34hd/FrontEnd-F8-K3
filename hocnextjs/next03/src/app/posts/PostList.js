@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 import useSWR from "swr";
@@ -24,7 +25,15 @@ const PostList = () => {
    }
    return (
       <div>
-         {isLoading ? <h3>Loading ...</h3> : data.map(({ id, title }) => <h3 key={id}>{title}</h3>)}
+         {isLoading ? (
+            <h3>Loading ...</h3>
+         ) : (
+            data.map(({ id, title }) => (
+               <h3 key={id}>
+                  {title} <Link href={`/posts/${id}`}>Chi tiet</Link>
+               </h3>
+            ))
+         )}
       </div>
    );
 };

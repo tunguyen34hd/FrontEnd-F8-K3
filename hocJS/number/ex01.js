@@ -24,7 +24,7 @@ console.log(a, typeof a);
 
 // Kiểm tra giá trị NaN
 if (Number.isNaN(a)) {
-     console.log("Đây là số NaN");
+   console.log("Đây là số NaN");
 }
 
 // Số infinity: Vượt quá mức lưu trữ cho phép
@@ -36,14 +36,14 @@ a = Infinity;
 //      console.log("Không phải");
 // }
 if (Math.abs(a) !== Infinity) {
-     console.log("Không phải");
+   console.log("Không phải");
 }
 
 /*
 Tìm hiểu: 
 Các loại ép kiểu:
 - parseInt()
-- ParseFloay()
+- ParseFloat()
 - Number() và +
 
 Làm tròn và lấy phần thập phân

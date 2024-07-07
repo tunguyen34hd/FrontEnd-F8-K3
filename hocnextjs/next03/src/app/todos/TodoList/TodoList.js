@@ -1,4 +1,5 @@
 "use client";
+import style from "./TodoList.module.scss";
 import { useState } from "react";
 import useSWR from "swr";
 const fetcher = (url) => fetch(url).then((res) => res.json()); // Trả về promise
@@ -21,7 +22,7 @@ const TodoList = () => {
    console.log(todoList);
    return (
       <>
-         <ul>
+         <ul className={style["todo-list"]}>
             {isLoading ? (
                <h3>Loading...</h3>
             ) : (

@@ -1,4 +1,6 @@
 "use client";
+import style from "./TodoForm.module.scss";
+
 import { useState } from "react";
 import { mutate } from "swr";
 
@@ -18,7 +20,7 @@ const TodoForm = () => {
       }
    };
    return (
-      <form action="" onSubmit={handleSubmit}>
+      <form action="" onSubmit={handleSubmit} className={style["todo-list"]}>
          <input
             type="text"
             placeholder="Tên công việc..."

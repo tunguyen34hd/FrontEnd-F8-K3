@@ -1,5 +1,8 @@
+import "./posts.scss";
 import PostList from "./PostList";
-
+export const metadata = {
+   title: "Danh sach bai viet",
+};
 const PostsPage = () => {
    return (
       <div>
